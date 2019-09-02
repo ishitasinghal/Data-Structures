@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Stack
+class Stack
 {
  int size;
  int top;
@@ -27,8 +27,7 @@ public class Stack
      }
      else
      {
-         arr[top] = e ;
-         top++;
+         arr[++top] = e ;
          //return true;
      }
  }
