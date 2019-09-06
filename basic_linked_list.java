@@ -13,6 +13,17 @@ public class Linkedlist
         }
     }
     
+    //function to print the linked list.
+    void print()
+    {
+        Node n= head;
+        while(n!=null)
+        {
+            System.out.print(n.data + " ");
+            n=n.next;
+        }
+    }
+    
     public static void main(String args[])
     {
         Linkedlist ls=new Linkedlist();
@@ -23,6 +34,6 @@ public class Linkedlist
         //here basically the three nodes have been made in which each points to null ls.head is the first one
         ls.head.next = two;
         two.next=three;  //next pointer of the second node now points to the third node
-        
+        ls.print();
     }
 }
