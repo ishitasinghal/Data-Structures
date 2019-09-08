@@ -50,7 +50,7 @@ public class Insertionatfront
         
         iaf.print();
         iaf.push(100);
-        System.out.println()
+        System.out.println();
         iaf.print();
         
     }
