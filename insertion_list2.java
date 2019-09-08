@@ -11,7 +11,7 @@ public class Insertinbet
         
         Node(int d)
         {
-            d=data;
+            data=d;
             next=null;
         }
     }
@@ -51,7 +51,8 @@ public class Insertinbet
         two.next=three;
         
         ib.print();
-        //ib.insert(two, 25);
+        ib.insert(two, 25);
+        System.out.println();
         ib.print();
         
     }
