@@ -37,7 +37,15 @@ public class Completeinsertion
         pre_node.next=new_node;
     }
     
-    //
+    //function to insert at the end
+    public void end(int element)
+    {
+        Node new_node = new Node(element);
+        if(head==null)
+        {
+            
+        }
+    }
     
     
 }
