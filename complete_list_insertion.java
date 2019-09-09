@@ -1,4 +1,4 @@
-//cpmplete insertion program for a linked list.
+//complete insertion program for a linked list.
 public class Completeinsertion
 {
     Node head;
@@ -43,9 +43,44 @@ public class Completeinsertion
         Node new_node = new Node(element);
         if(head==null)
         {
-            
+           head=new Node(element); //if list is empty
+           return;
+        }
+        
+        new_node.next=null;
+        Node last=head;
+        while(last.next!=null)  //traversal till the last node.
+        {
+           last=last.next;
+        }
+        
+         last.next=new_node;
+         return;
+    }
+    
+    //print function
+    public void print()
+    {
+        Node n=head;
+        while(n!=null)
+        {
+            System.out.print(n.data+" ");
+            n=n.next;
         }
     }
     
+    //finally the main function
+    public static void main(String args[])
+    {
+        Completeinsertion ci = new Completeinsertion();
+        ci.end(5);  //start with empty list
+        ci.front(2);
+        ci.front(1);
+        ci.end(6);
+        ci.between(ci.head.next, 3);  //at the third position.
+        System.out.println("\nCurrent Linked List: ");
+        ci.print();
+        
+    }
     
 }
