@@ -52,7 +52,7 @@ public class Dellist
         while(no!=null)
         {
             System.out.print(no.data+" ");
-            n=n.next;
+            no=no.next;
         }
     }
     
@@ -62,6 +62,18 @@ public class Dellist
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("How many elements u wanna put into the list?");
         int n = Integer.parseInt(br.readLine());
+        for(int i=0;i<n;i++)
+        {
+            System.out.println("Continue");
+            dl.push(i);
+        }
+        System.out.println("The list is: ");
+        dl.print();
+        System.out.println("Now enter the element u wanna remove from the list!!");
+        int nu=Integer.parseInt(br.readLine());
+        dl.firstdel(nu);
+        System.out.println("After deleting the final list is :");
+        dl.print();
         
         
     }
