@@ -59,20 +59,33 @@ public class Dellist
     public static void main(String args[])throws IOException
     {
         Dellist dl=new Dellist();
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("How many elements u wanna put into the list?");
-        int n = Integer.parseInt(br.readLine());
-        for(int i=0;i<n;i++)
-        {
-            System.out.println("Continue");
-            dl.push(i);
-        }
-        System.out.println("The list is: ");
+        // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        // System.out.println("How many elements u wanna put into the list?");
+        // int n = Integer.parseInt(br.readLine());
+        // for(int i=0;i<n;i++)
+        // {
+        //     System.out.println("Continue");
+        //     dl.push(i);
+        // }
+        // System.out.println("The list is: ");
+        // dl.print();
+        // System.out.println("Now enter the element u wanna remove from the list!!");
+        // int nu=Integer.parseInt(br.readLine());
+        // dl.firstdel(nu);
+        // System.out.println("After deleting the final list is :");
+        // dl.print();
+        
+        dl.push(1);
+        dl.push(5);
+        dl.push(8);
+        dl.push(6);
+        dl.push(9);
+        
+        System.out.println("Created list");
         dl.print();
-        System.out.println("Now enter the element u wanna remove from the list!!");
-        int nu=Integer.parseInt(br.readLine());
-        dl.firstdel(nu);
-        System.out.println("After deleting the final list is :");
+        dl.firstdel(8);
+        
+        System.out.println("New list");
         dl.print();
         
         
