@@ -58,10 +58,7 @@ public class Posdel
             n=n.next;
         }
     }
-}
 
-class Demo
-{
     public static void main(String args[])
     {
         Posdel pd=new Posdel();
@@ -75,7 +72,7 @@ class Demo
         System.out.println("Initially created list is ! ");
         pd.print();
         
-        pd.delkey(3);
+        pd.delkey(2);
         System.out.println("Now the list is ! ");
         pd.print();
         
