@@ -28,11 +28,11 @@ public class Deletelist
     
     public void print()
     {
-        Node no;
+        Node no=head;
         while(no!=null)
         {
             System.out.print(no.data+" ");
-            no=no.next;
+            no=n.next;
         }
     }
     
@@ -45,8 +45,8 @@ public class Deletelist
         dl.insert(94);
         System.out.print("Initially the list is : ");
         dl.print();
-        dl.delete();
-        System.out.print("Deleted list is: ");
-        dl.print();
+        // dl.delete();
+        // System.out.print("Deleted list is: ");
+        // dl.print();
     }
 }
