@@ -9,7 +9,7 @@ public class Iternodes
         Node(int d)
         {
             data=d;
-            netx=null;
+            next=null;
         }
     }
     
@@ -24,5 +24,25 @@ public class Iternodes
     {
         Node temp=head;
         int c=0;   //initializing count variable
+        while(temp!=null)
+        {
+            c=c+1;
+            temp=temp.next;
+        }
+        return c;
+    }
+    
+    public static void main(String args[])
+    {
+        Iternodes in = new Iternodes();
+        in.insert(98);
+        in.insert(54);
+        in.insert(46);
+        in.insert(64);
+        in.insert(74);
+        in.insert(63);
+        in.insert(9);
+        
+        System.out.println("The number of nodes in the linked list are:  "+ in.count());
     }
 }
