@@ -10,7 +10,7 @@ class Node
     }
 }
 
-class Itersearch
+public class Itersearch
 {
     Node head;
     public void insert(int element)
