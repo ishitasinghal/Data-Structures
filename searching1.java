@@ -1,4 +1,5 @@
 //searching an element in the linked list by iterative approach
+import java.io.*;
 class Node
 {
     int data; 
@@ -34,7 +35,7 @@ public class Itersearch
         return false;
     }
     
-    public static void main(String args[])
+    public static void main(String args[])throws IOException
     {
         Itersearch is = new Itersearch();
         is.insert(98);
@@ -45,6 +46,9 @@ public class Itersearch
         is.insert(63);
         is.insert(9);
         
-        System.out.println("Data present =  "+ is.search(is.head, 32));
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter the element u wanna search!");
+        int num = Integer.parseInt(br.readLine());
+        System.out.println("Data present =  "+ is.search(is.head, num));
     }
 }
