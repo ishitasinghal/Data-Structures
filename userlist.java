@@ -1,7 +1,6 @@
 //user made linked list
 import java.io.*;
 import java.util.*;
-import java.lang.*;
 
 class Node
 {
@@ -14,7 +13,7 @@ class Node
     }
 }
 
-public class Userlist()
+public class Userlist
 {
     Node head;
     public void insert(int element)
@@ -36,14 +35,16 @@ public class Userlist()
     
     public static void main(String args[])throws IOException
     {
-        BufferedReader br = new BufferedReader(new InputStreamReader(system.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter how many elements u wanna insert : ");
         int n = Integer.parseInt(br.readLine());
         Userlist ul = new Userlist();
         for(int i =0; i<n; i++)
         {
-            
+            int num = Integer.parseInt(br.readLine());
+            ul.insert(num);
         }
         
+        ul.print();
     }
 }
