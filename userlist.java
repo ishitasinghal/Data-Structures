@@ -13,7 +13,7 @@ class Node
     }
 }
 
-public class Userlist
+public class UserList
 {
     Node head;
     public void insert(int element)
@@ -38,7 +38,7 @@ public class Userlist
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter how many elements u wanna insert : ");
         int n = Integer.parseInt(br.readLine());
-        Userlist ul = new Userlist();
+        UserList ul = new UserList();
         for(int i =0; i<n; i++)
         {
             int num = Integer.parseInt(br.readLine());
