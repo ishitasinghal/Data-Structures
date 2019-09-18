@@ -35,7 +35,7 @@ public class Endnode
         {
             temp=temp.next;
         }
-        System.out.println("The data is "+ temp.data);
+        System.out.print("The data is "+ temp.data);
     }
     
     public void insert(int element)
@@ -43,6 +43,18 @@ public class Endnode
         Node n = new Node(element);
         n.next=head;
         head=n;
+    }
+    
+    void print()
+    {
+        Node no=head;
+        while(no!=null)
+        {
+            System.out.print(no.data+" ");
+            no=no.next;
+        }
+        System.out.println();
+        
     }
     
     public static void main(String args[])
@@ -54,6 +66,8 @@ public class Endnode
         en.insert(68);
         en.insert(98);
         en.insert(56);
+        
+        en.print();
         
         en.noden(2);
     }
