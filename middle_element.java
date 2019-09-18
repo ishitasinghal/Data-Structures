@@ -54,8 +54,8 @@ public class Middle
         m.insert(3);
         m.insert(4);
         m.insert(5);
-        m.insert(6);
-        
+        //m.insert(6);
+        //when the number of elements is even, it returns the second element of the two middle elements.
         m.print();
         
         m.middlele();
