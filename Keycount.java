@@ -1,52 +1,49 @@
-//counting the number of keys in the linked list
-class Keycount
-{ 	Node head;
-	static class Node
+//program to count keys in a linked list using recursion
+import java.io.*;
+import java.util.*;
+class Node
+{
+	int data;
+	Node next;
+	Node(int d)
 	{
-		int data;
-		Node next;
-		Node(int d)
-		{
-			data = d; //using this pointer
-			next=null;
-		}
+		data=d;
+		next=null;
 	}
-	
-	public void insert(int element)
+}
+
+class LinkedList
+{
+	static int c=0; //initializing global variable to count 
+	static Node insert(Node head, int element)
 	{
 		Node n = new Node(element);
 		n.next=head;
 		head=n;
+		return head;
 	}
 	
-	int countkey(int key)
+	static int count(Node head, int key)
 	{
-		Node present=head;
-		int c=0; //initializing variable for count
-		while(present!=null)
-		{
-			if(present.data==key)
-			{
-				c++;
-			}
-			present=present.next;
-		}
-		return c;
+		if(head==null)
+			return c;
+		if(head.data==key)
+			c++;
+		return(count(head.next, key));
 	}
 	
-	public static void main(String args[])
+	public static void main(String argd[])
 	{
-		Keycount kn = new Keycount();
-		kn.insert(100);
-		kn.insert(99);
-		kn.insert(98);
-		kn.insert(97);
-		kn.insert(100);
-		kn.insert(99);
-		kn.insert(100);
-		kn.insert(96);
-		kn.insert(100);
-		kn.insert(98);
-		System.out.println("Count of 100 in the key list is "+kn.countkey(100));
+		Node head=null;
+		head=insert(head, 100);
+		head=insert(head, 99);
+		head=insert(head, 100);
+		head=insert(head, 98);
+		head=insert(head, 100);
+		head=insert(head, 100);
+		head=insert(head, 100);
+		head=insert(head, 97);
+		
+		System.out.println("Count of 100 is "+count(head, 100));
 	}
 }
