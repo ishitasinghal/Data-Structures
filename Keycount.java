@@ -47,6 +47,6 @@ class Keycount
 		kn.insert(96);
 		kn.insert(100);
 		kn.insert(98);
-		System.out.println("Count of 98 in the key list is "+kn.countkey(98));
+		System.out.println("Count of 100 in the key list is "+kn.countkey(100));
 	}
 }
