@@ -49,7 +49,5 @@ class LinkedList
 		else
 			System.out.println("No loop!");
 
-		
-		System.out.println("Count of 100 is "+count(head, 100));
 	}
 }
