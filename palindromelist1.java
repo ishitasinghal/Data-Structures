@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.*;
 class LinkedList
 {
-	class Node
+	static class Node
 	{
 		char data;
 		Node next;
@@ -41,7 +41,7 @@ class LinkedList
 		return palin;
 	}
 	
-	public static void main(Stirng args[])
+	public static void main(String args[])
 	{
 		Node one = new Node('a');
 		Node two = new Node('b');
