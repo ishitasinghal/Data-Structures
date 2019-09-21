@@ -29,7 +29,7 @@ class LinkedList
 	static int nodesinloop(Node no)
 	{
 		Node ptr1 = no, ptr2=no;
-		while(ptr1=!=null && ptr2!=null && ptr2!=null)
+		while(ptr1!=null && ptr2!=null && ptr2!=null)
 		{
 			ptr1 = ptr1.next;       //moves a single node ahead
 			ptr2 = ptr2.next.next;  //moves two nodes ahead
@@ -59,7 +59,7 @@ class LinkedList
 		
 		
 		//we delibrately make a loop to test the code
-		head.next.next.next.next.next.next = head.next;
+		head.next.next.next.next = head.next;
 		System.out.println(nodesinloop(head));
 	}
 }
