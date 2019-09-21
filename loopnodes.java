@@ -61,5 +61,9 @@ class LinkedList
 		//we delibrately make a loop to test the code
 		head.next.next.next.next = head.next;
 		System.out.println(nodesinloop(head));
+		//let's try making another loop!
+		head.next.next.next.next.next = head.next;
+		System.out.println(nodesinloop(head));
+		
 	}
 }
