@@ -48,7 +48,7 @@ class LinkedList
 		Node three = new Node('c');
 		Node four = new Node('d');
 		Node five = new Node('c');
-		Node six = new Node('b');
+		Node six = new Node('e');
 		Node seven = new Node('a');
 		one.next = two; 
         two.next = three; 
