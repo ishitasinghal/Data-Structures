@@ -41,7 +41,7 @@ class LinkedList
 		Node no=head;
 		while(no!=null)
 		{
-			System.out.print(np.data+" ");
+			System.out.print(no.data+" ");
 			no=no.next;
 		}
 		System.out.println();
