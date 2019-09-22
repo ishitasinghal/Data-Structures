@@ -1,5 +1,5 @@
 //removing duplicates from the linkedlist
-class LinkedList
+class Duplicatenodes
 {
 	Node head;
 	class Node
@@ -49,7 +49,7 @@ class LinkedList
 	
 	public static void main(String args[])
 	{
-		LinkedList dn = new LinkedList();
+		Duplicatenodes dn = new Duplicatenodes();
 		dn.insert(10);
 		dn.insert(20); 
         dn.insert(13); 
