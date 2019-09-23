@@ -14,6 +14,20 @@ class LinkedList
 		}
 	}
 	
+	void swapnodes(int a, int b)   //a and b are the nodes.
+	{
+		if(a==b)
+		{
+			return; //nodes are same
+		}
+		Node preva = null, currenta=head;
+		while(currenta!=null && currenta!=a)
+		{
+			preva = currenta;
+			currenta = currenta.next;
+		}
+	}
+	
 	
 	
 	public static void main(String args[])
