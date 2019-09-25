@@ -55,7 +55,8 @@ public class Pairnodes
         pn.insert(5);
         pn.insert(6);
         pn.insert(7);
-        pn.insert(8);
+        //for odd numbered list of elements the lst element remains the same
+        //pn.insert(8);
         
         System.out.println("Initial list: "); 
         pn.print(); 
