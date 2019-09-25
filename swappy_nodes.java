@@ -29,7 +29,20 @@ public class Pairnodes
     
     void insert(int element)
     {
-        
+        Node n = new Node(element);
+        n.next=head;
+        head = n;
+    }
+    
+    void print()
+    {
+        Node h;
+        while(h!=null)
+        {
+            system.out.print(h.data+" ");
+            h=h.next;
+        }
+        System.out.println();
     }
     
 }
