@@ -45,4 +45,25 @@ public class Pairnodes
         System.out.println();
     }
     
+    public static void main(String args[])
+    {
+        Pairnodes pn = new Pairnodes();
+        pn.insert(1);
+        pn.insert(2);
+        pn.insert(3);
+        pn.insert(4);
+        pn.insert(5);
+        pn.insert(6);
+        pn.insert(7);
+        pn.insert(8);
+        
+        System.out.println("Initial list: "); 
+        pn.print(); 
+  
+        llist.pairWiseSwap(); 
+  
+        System.out.println("Linked List after calling pairWiseSwap() "); 
+        llist.printList(); 
+        
+    }
 }
