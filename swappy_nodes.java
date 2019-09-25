@@ -6,10 +6,10 @@ public class Pairnodes
     {
         Node next;
         int data;
-        next=null;
         Node(int d)
         {
             data=d;
+            next=null;
         }
     }
     
@@ -36,10 +36,10 @@ public class Pairnodes
     
     void print()
     {
-        Node h;
+        Node h=head;
         while(h!=null)
         {
-            system.out.print(h.data+" ");
+            System.out.print(h.data+" ");
             h=h.next;
         }
         System.out.println();
@@ -60,10 +60,10 @@ public class Pairnodes
         System.out.println("Initial list: "); 
         pn.print(); 
   
-        llist.pairWiseSwap(); 
+        pn.pairswap(); 
   
-        System.out.println("Linked List after calling pairWiseSwap() "); 
-        llist.printList(); 
+        System.out.println("Final list "); 
+        pn.print(); 
         
     }
 }
