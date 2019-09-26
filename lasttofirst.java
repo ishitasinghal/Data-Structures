@@ -36,6 +36,33 @@ public class Lasttofront
         if(head==null || head.next==null)
         return;
         
-        Node 
+        Node seclast =null;
+        Node temp=head;
+        
+        while(temp.next!=null)
+        {
+            seclast = temp;
+            temp=temp.next;
+        }
+        seclast.next=null;
+        temp.next = head;
+        head=temp;
+    }
+    
+    public static void main(String args[])
+    {
+        Lastoffront lf = new Lastoffront();
+        lf.insert(1);
+        lf.insert(2);
+        lf.insert(3);
+        lf.insert(4);
+        lf.insert(5);
+        lf.insert(6);
+        
+        System.out.println("Initial list : ");
+        lf.print();
+        System.out.println("Final rearranged list ");
+        lf.frontmove();
+        lf.print();
     }
 }
