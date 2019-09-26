@@ -1,5 +1,5 @@
 //moving last element to the front of the linked list
-public class Lasttofront
+public class Lastoffront
 {
     Node head;
     class Node
@@ -25,7 +25,7 @@ public class Lasttofront
         Node h = head;
         while(h!=null)
         {
-            System.out.print("h.data"+" ");
+            System.out.print(h.data+" ");
             h=h.next;
         }
         System.out.println();
