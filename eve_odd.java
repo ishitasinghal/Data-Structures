@@ -25,7 +25,7 @@ public class Eveodd
         Node n = last;
         while(curr.data%2 !=0 && curr!=last)
         {
-            n = curr;
+            n.next = curr;
             curr = curr.next;
             n.next.next = null;
             n = n.next;
