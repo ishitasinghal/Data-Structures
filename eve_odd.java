@@ -19,21 +19,21 @@ public class Eveodd
         Node prev = null;
         Node curr = head;
         
-        while(last.next!=nul)
+        while(last.next!=null)
         last = last.next;
         
         Node n = last;
-        while(curr.data%2 !=0 && curr!=end)
+        while(curr.data%2 !=0 && curr!=last)
         {
-            new_last = curr;
+            n = curr;
             curr = curr.next;
-            new_last.next.next = null;
-            new_last = new_last.next;
+            n.next.next = null;
+            n = n.next;
         }
         if(curr.data%2==0)
         {
             head = curr;
-            while(curr!=end){
+            while(curr!=last){
                 if(curr.data%2==0)
                 {
                     prev = curr;
@@ -43,19 +43,19 @@ public class Eveodd
                 {
                     prev.next = curr.next;
                     curr.next = null;
-                    new_last.next=curr;
-                    new_last=curr;
+                    n.next=curr;
+                    n=curr;
                     curr=prev.next;
                 }
             }
         }
         else
         prev=curr;
-        if(new_last!=last && last.data%2!=0)
+        if(n!=last && last.data%2!=0)
         {
             prev.next=last.next;
             last.next=null;
-            new_last.next=end;
+            n.next=last;
         }
     }
     void insert(int element)
@@ -91,9 +91,8 @@ public class Eveodd
         
         System.out.println("Origional Linked List"); 
         eo.print();
-        
-        System.out.println("Final Linked List");
         eo.seperator();
+        System.out.println("Final Linked List");
         eo.print(); 
         
     }
