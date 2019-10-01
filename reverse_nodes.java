@@ -1,6 +1,6 @@
 //reversing a stack that is bottom element to be inseted at the top and vice-versa.
 import java.util.Stack;
-public Class Revstack
+public class Revstack
 {
     static Stack<Character> st=new Stack<>();
     static void pushbottom(char c)
