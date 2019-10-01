@@ -7,7 +7,7 @@ public class Sentrev
     {
         Stack<String> s = new Stack<>();
         String ar[] = sen.split(" ");
-        for(int i=0;i<ar,length;i++)
+        for(int i=0;i<ar.length;i++)
         {
             s.push(ar[i]);
         }
@@ -18,7 +18,7 @@ public class Sentrev
         }
     }
     
-    public static void main(string args[])
+    public static void main(String args[])
     {
         String sen = "Let the sentence be reversed.";
         rev(sen);
