@@ -15,4 +15,15 @@ public Class Revstack
             st.push(ch);
         }
     }
+    
+    static void reverse()
+    {
+        if(st.size()>0)
+        {
+            char ch = st.peek();
+            st.pop();
+            reverse();
+            pushbottom(ch);
+        }
+    }
 }
