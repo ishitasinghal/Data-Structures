@@ -12,5 +12,15 @@ public class Sentrev
             s.push(ar[i]);
         }
         while(!s.empty())
+        {
+            System.out.print(s.peek() + " ");
+            s.pop();
+        }
+    }
+    
+    public static void main(string args[])
+    {
+        String sen = "Let the sentence be reversed.";
+        rev(sen);
     }
 }
