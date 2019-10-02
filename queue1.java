@@ -14,6 +14,22 @@ public class Queueviastack
                 s2.push(s1.pop());
             }
             s1.push(x);
+            while(!s2.isEmpty())
+            {
+                s1.push(s2.pop());
+            }
+        }
+        static int deQueue()
+        {
+            if(s1.isEmpty())
+            {
+                System.out.println("Queue is Empty");
+                System.exit(0);
+            }
+            int x=s1.peek();
+            s1.pop();
+            return x;
         }
     }
+    
 }
