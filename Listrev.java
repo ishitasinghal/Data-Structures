@@ -38,11 +38,12 @@ public class Listrev
     public static void main(String args[])
     {
         Listrev lr=new Listrev();
-        lr.head=new Node(23);
-        lr.head.next=new Node(34);
-        lr.head.next.next=new Node(67);
-        lr.head.next.next.next=new Node(100);
-        lr.head.next.next.next.next=new Node(97);
+        lr.head=new Node(10);
+        lr.head.next=new Node(20);
+        lr.head.next.next=new Node(30);
+        lr.head.next.next.next=new Node(40);
+        lr.head.next.next.next.next=new Node(50);
+        lr.head.next.next.next.next.next=new Node(100);
         System.out.println("Initial linked List");
         lr.print(head);
         head=lr.rev(head);
