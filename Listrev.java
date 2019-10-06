@@ -35,7 +35,7 @@ public class Listrev
             node = node.next;
         }
     }
-    public static void main(sString args[])
+    public static void main(String args[])
     {
         Listrev lr=new Listrev();
         lr.head=new Node(23);
