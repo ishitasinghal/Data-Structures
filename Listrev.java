@@ -21,6 +21,18 @@ public class Listrev
         {
             next=current.next;
             current.next=prev;
+            prev = current;
+            current=next;
+        }
+        node=prev;
+        return node;
+    }
+    void print(Node node)
+    {
+        while(node!=null)
+        {
+            System.out.print(node.data+" ");
+            node = node.next;
         }
     }
 }
