@@ -6,7 +6,7 @@ public class Listrev
     {
         int data;
         Node next;
-        NOde(int d)
+        Node(int d)
         {
             next=null;
             data=d;
