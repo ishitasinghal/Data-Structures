@@ -35,4 +35,19 @@ public class Listrev
             node = node.next;
         }
     }
+    public static void main(sString args[])
+    {
+        Listrev lr=new Listrev();
+        lr.head=new Node(23);
+        lr.head.next=new Node(34);
+        lr.head.next.next=new Node(67);
+        lr.head.next.next.next=new Node(100);
+        lr.head.next.next.next.next=new Node(97);
+        System.out.println("Initial linked List");
+        lr.print(head);
+        head=lr.rev(head);
+        System.out.println("");
+        System.out.println("Reversed List");
+        lr.print(head);
+    }
 }
