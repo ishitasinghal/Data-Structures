@@ -14,6 +14,13 @@ public class Listrev
     }
     Node rev(Node node)
     {
-        
+        Node prev=null;
+        Node current=node;
+        Node next=null;
+        while(current!=null)
+        {
+            next=current.next;
+            current.next=prev;
+        }
     }
 }
