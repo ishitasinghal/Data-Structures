@@ -33,8 +33,22 @@ public class Stackk
         }
         else
         {
-            int x=a[top--];
+            int x=starr[top--];
             return x;
+        }
+    }
+    
+    int peep()
+    {
+        if(top<0)
+        {
+            System.out.println("Stack underflow");
+            return 0;
+        }
+        else
+        {
+            int a=starr[top];
+            return a;
         }
     }
 }
