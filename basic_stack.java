@@ -20,7 +20,7 @@ public class Stackk
         }
         else
         {
-            a[++top]=e;
+            starr[++top]=e;
         }
     }
     
@@ -38,7 +38,7 @@ public class Stackk
         }
     }
     
-    int peep()
+    int peek()
     {
         if(top<0)
         {
@@ -51,7 +51,7 @@ public class Stackk
             return a;
         }
     }
-}
+
 public static void main(String args[])
 {
     Stackk s = new Stackk(); 
@@ -59,4 +59,8 @@ public static void main(String args[])
         s.push(20); 
         s.push(30); 
         System.out.println(s.peek());
+        s.pop();
+        System.out.println(s.peek());
+        
+}
 }
