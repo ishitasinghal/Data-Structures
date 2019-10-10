@@ -49,5 +49,46 @@ public class Queue
         return item;
     }
     
+    //getting the front of the queue
+    void front()
+    {
+        if(isempty(this))
+        {
+            return Integer.MIN_VALUE;
+        }
+        return this.array[this.front];
+    }
     
+    //getting the rear of the queue
+    void rear()
+    {
+        if(isempty(this))
+        {
+            return Integer.MIN_VALUE;
+        }
+        return this.array[this.rear];
+    }
+}
+public class Mainc
+{
+    public static void main(Stirng args[])
+    {
+        Queue q = new Queue(500);
+        q.enqueue(1);
+        q.enqueue(2);
+        q.enqueue(3);
+        q.enqueue(4);
+        q.enqueue(5);
+        q.enqueue(6);
+        q.enqueue(7);
+        q.enqueue(8);
+        q.enqueue(9);
+        
+        System.out.println("## BEFORE ##");
+        System.out.println("Front element"+q.front());
+        System.out.println("Rear element"+q.rear());
+        System.out.println("## AFTER ##"");
+        System.out.println("Front element"+q.front());
+        System.out.println("Rear element"+q.rear());
+    }
 }
