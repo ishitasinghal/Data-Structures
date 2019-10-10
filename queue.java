@@ -25,5 +25,16 @@ public class Queue
         return(q.size==0);
     }
     
-    
+    //enqueue function to insert the elemnrs in the queue
+    void enqueue(int element)
+    {
+        if(isfull(this))
+        {
+            return;
+            this.rear = (this.rear +1)%this.length;
+            this.array[this.rear] = element;
+            this.size = this.size+1;
+            System.out.println(element+"Inserted into the queue");
+        }
+    }
 }
