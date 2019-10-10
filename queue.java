@@ -12,4 +12,10 @@ public class Queue
         rear= length-1;
         array = new int[this.capacity];
     }
+    
+    //checking if Queue doesn't have more space left.
+    boolean isfull(Queue q)
+    {
+        return(q.size==q.length);
+    }
 }
