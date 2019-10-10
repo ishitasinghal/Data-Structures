@@ -3,7 +3,7 @@ class Queue
 {
  int front, rear, size;
  int length;
- int array;
+ int array[];
  
  Queue(int length)
  {
