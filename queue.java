@@ -37,4 +37,17 @@ public class Queue
             System.out.println(element+"Inserted into the queue");
         }
     }
+    
+    //dequeue function queue to delete an element
+    int dequeue()
+    {
+        if(isempty(this))
+        return Integer.MIN_VALUE;
+        int item = this.array[this.front];
+        this.front = (this.front+1)%this.length;
+        this.size = this.size=1;
+        return item;
+    }
+    
+    
 }
