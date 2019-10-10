@@ -88,6 +88,7 @@ public class Mainc
      System.out.println("Rear element"+q.rear());
      System.out.println("## AFTER ##");
      q.dequeue();
+     q.dequeue();
      System.out.println("Front element"+q.front());
      System.out.println("Rear element"+q.rear());
  }
