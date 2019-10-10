@@ -1,4 +1,5 @@
 //implementing queue by array
+//deletion takes place from the front
 class Queue
 {
  int front, rear, size;
@@ -86,6 +87,7 @@ public class Mainc
      System.out.println( q.front()+ "Front element");
      System.out.println("Rear element"+q.rear());
      System.out.println("## AFTER ##");
+     q.dequeue();
      System.out.println("Front element"+q.front());
      System.out.println("Rear element"+q.rear());
  }
