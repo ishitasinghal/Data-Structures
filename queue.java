@@ -18,4 +18,12 @@ public class Queue
     {
         return(q.size==q.length);
     }
+    
+    //checking if the queue is Empty.
+    boolean isempty(Queue q)
+    {
+        return(q.size==0);
+    }
+    
+    
 }
