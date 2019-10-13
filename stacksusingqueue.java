@@ -42,7 +42,17 @@ class Squeue
 		return q.isEmpty();
 	}
 	
-	
-	
-	
+	public static void main(String args[])
+	{
+		Squeue s = new Squeue();
+		s.push(1);
+		s.push(2);
+		s.push(3);
+		System.out.println("Top element is "+ s.top());
+		s.pop();
+		s.push(4);
+		s.push(5);
+		s.pop();
+		System.out.print("Top element is "+s.top());
+	}
 }
