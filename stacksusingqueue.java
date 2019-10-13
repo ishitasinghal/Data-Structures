@@ -52,6 +52,7 @@ class Squeue
 		s.pop();
 		s.push(4);
 		s.push(5);
+		s.push(7);
 		s.pop();
 		System.out.print("Top element is "+s.top());
 	}
