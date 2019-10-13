@@ -36,6 +36,12 @@ class Squeue
 		return q.peek();
 	}
 	
+	//checking whether element is present in the stack or not 
+	boolean isempty()
+	{
+		return q.isEmpty();
+	}
+	
 	
 	
 	
