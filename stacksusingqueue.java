@@ -28,5 +28,15 @@ class Squeue
 		return x;
 	}
 	
+	//returning the top element of the stack
+	int top()
+	{
+		if(q.isEmpty())
+			return -1;
+		return q.peek();
+	}
+	
+	
+	
 	
 }
