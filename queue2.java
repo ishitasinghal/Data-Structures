@@ -37,6 +37,25 @@ static void print()
     q.remove();
   }
 }
+public static void main(String args[])
+{
+  q=new LinkedList<Integer>();
+  q.add(1);
+  q.add(2);
+  q.add(4);
+  q.add(6);
+  q.add(8);
+  q.add(10);
+  q.add(12);
+  q.add(14);
+  q.add(16);
+  q.add(18);
+  
+  int k=5;
+  reversefirstkele(k);
+  print();
+}
+}
 
 
   
