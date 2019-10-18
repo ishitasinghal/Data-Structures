@@ -14,7 +14,7 @@ static void reversefirstkele(int k)
     return;
   Stack<Integer> s = new Stack<Integer>();
   //pushing elements into the stack
-  for(int i=0;i<k;i++)
+  for(int i=0;i<k;i++) {
     s.push(q.peek());
   q.remove();
 }
@@ -56,6 +56,3 @@ public static void main(String args[])
   print();
 }
 }
-
-
-  
