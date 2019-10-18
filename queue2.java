@@ -51,7 +51,7 @@ public static void main(String args[])
   q.add(16);
   q.add(18);
   
-  int k=5;
+  int k=2;
   reversefirstkele(k);
   print();
 }
