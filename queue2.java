@@ -18,7 +18,7 @@ static void reversefirstkele(int k)
     s.push(q.peek());
   q.remove();
 }
- while(!stack.empty())
+ while(!s.empty())
  {
    q.add(s.peek());
    s.pop();
