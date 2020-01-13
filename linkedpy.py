@@ -25,8 +25,8 @@ class LinkedList:
         else:
             temp = self.start
             while temp!=None:
-                print(temp.data, end=' ')
+                print(temp.data, end= ' ')
                 temp=temp.next
-mylist = LinkedLList()
+mylist = LinkedList()
 mylist.insert(4)
             
