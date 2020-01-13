@@ -6,7 +6,7 @@ class LinkedList:
     def __init__(self):
         self.start = None
     def insertend(self, value):
-        newnode = node(value)
+        newnode = Node(value)
         if(self.start==None):
             self.start=newnode
         else:
