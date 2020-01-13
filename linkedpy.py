@@ -28,5 +28,6 @@ class LinkedList:
                 print(temp.data, end= ' ')
                 temp=temp.next
 mylist = LinkedList()
-mylist.insert(4)
+mylist.insertend(4)
+mylist.printlist()
             
