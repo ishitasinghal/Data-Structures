@@ -29,5 +29,7 @@ class LinkedList:
                 temp=temp.next
 mylist = LinkedList()
 mylist.insertend(4)
-mylist.printlist()
+mylist.insertend(8)
+mylist.delfrst()
+mylist.printlist() 
             
