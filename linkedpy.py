@@ -30,6 +30,8 @@ class LinkedList:
 mylist = LinkedList()
 mylist.insertend(4)
 mylist.insertend(8)
+mylist.insertend(12)
+mylist.insertend(16)
 mylist.delfrst()
 mylist.printlist() 
             
