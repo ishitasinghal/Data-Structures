@@ -1,3 +1,5 @@
+#the code has been practiced from "https://www.geeksforgeeks.org/doubly-linked-list/" .
+
 class Node:
     def __init__(self, next=None, prev=None, data=None):
         self.next = next
@@ -18,6 +20,17 @@ class Double:
             print(node.data, end = ' ')
             last = node
             node = node.next
+    def afternode(self, prevnode, info):
+        if prevnode is None:
+            print("NO SUCH NODE EXISTS")
+            return
+        newnode = Node(data = info)
+        newnode.next = prevnode.next
+        prevnode.next = newnode
+        newnode.prev = prevnode
+        if newnode.next is not None:
+            newnode.next.prev = newnode
+        
         
 listobj = Double()
 listobj.addatfront(1)
