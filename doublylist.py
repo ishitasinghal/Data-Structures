@@ -1,3 +1,5 @@
+#the code has been practiced from "https://www.geeksforgeeks.org/doubly-linked-list/" .
+
 class Node:
     def __init__(self, next=None, prev=None, data=None):
         self.next = next
@@ -8,5 +10,6 @@ class Node:
         newnode.next = self.head
         newnode.prev = None
         if(self.head is not None):
-            self.head id 
+            self.head.prev = newnode
+        self.head = newnode
         
