@@ -34,5 +34,7 @@ listobj.addatfront(1)
 listobj.addatfront(2)
 listobj.addatfront(3)
 listobj.addatfront(5)
-listobj.afternode(listobj.head.next,8)
+#listobj.afternode(listobj.head.next,8)
+#output: 5 3 8 2 1
+listobj.afternode(listobj.head.next.next,8)
 listobj.printinfo(listobj.head)
