@@ -27,15 +27,17 @@ class Double:
         newnode.prev = prevnode
         if newnode.next is not None:
             newnode.next.prev = newnode
-        
-        
+
+    def atend(self, info):
+        newnode = Node(info)
+        last = self.head
+        newnode.next = None
+        if self.head is None:
+            
 listobj = Double()
 listobj.addatfront(1)
 listobj.addatfront(2)
 listobj.addatfront(3)
 listobj.addatfront(5)
-#listobj.afternode(listobj.head.next,8)
-#output: 5 3 8 2 1
 listobj.afternode(listobj.head.next.next,8)
-#output: 5 3 2 8 1
 listobj.printinfo(listobj.head)
