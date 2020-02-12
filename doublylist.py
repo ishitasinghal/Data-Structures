@@ -16,7 +16,7 @@ class Double:
         while(node is not None):
             print(node.data, end = ' ')
             last = node
-            node = node.next
+            node = node.next.    #togo to the next node
     def afternode(self, prevnode, info):
         if prevnode is None:
             print("NO SUCH NODE EXISTS")
