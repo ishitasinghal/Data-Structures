@@ -1,0 +1,10 @@
+Source: https://www.hackerrank.com/challenges/insert-a-node-into-a-sorted-doubly-linked-list/problem
+
+Problem Statement
+Given a reference to the head of a doubly-linked list and 
+an integer, data, create a new DoublyLinkedListNode object 
+having data value data and insert it into a sorted linked 
+list while maintaining the sort.
+
+Code:
+
