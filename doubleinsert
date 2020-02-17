@@ -20,4 +20,6 @@ def sortedInsert(head, data):
         return nnode
     else:
         nnode = sortedInsert(head.next, data)
-        head.next  nnode
+        head.next = nnode
+        nnode.prev = head
+        return head
