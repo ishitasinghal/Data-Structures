@@ -14,3 +14,10 @@ def sortedInsert(head, data):
     nnode = DoublyLinkedListNode(data)
     if head == None:
         return nnode
+    elif data<head.data:
+        nnode.next = head
+        head.prev = nnode
+        return nnode
+    else:
+        nnode = sortedInsert(head.next, data)
+        head.next  nnode
