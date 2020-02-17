@@ -8,3 +8,9 @@ list while maintaining the sort.
 
 Code:
 
+#function
+
+def sortedInsert(head, data):
+    nnode = DoublyLinkedListNode(data)
+    if head == None:
+        return nnode
