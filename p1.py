@@ -17,7 +17,12 @@
 
 # CODE
 
-list1 = [3, 6, 2, 6, 9, 12, 5, 8, 4]
+list1 = [3, 4, -7, 1, 3, 3, 1, -4]
 s = int(input())
-while(sum<=s):
-    
+for i in range(len(list1)):
+    sum=0
+    for j in range(i,len(list1)):
+        sum = sum+list1[j]
+        if(sum==s):
+            print(list1[i:j])
+
