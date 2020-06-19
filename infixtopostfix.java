@@ -1,3 +1,5 @@
+#application of stacks
+
 import java.util.*;
 public class Postfix
 {
