@@ -79,4 +79,3 @@ public static void main(String[] args)
 }
 
 
-//In this program two classes are made.
