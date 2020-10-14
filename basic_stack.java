@@ -1,4 +1,4 @@
-#basic stack implementation
+#basic stack implementation in java
 public class Stackk
 {
     static final int MAX=1000;
