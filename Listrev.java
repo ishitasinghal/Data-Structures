@@ -43,7 +43,6 @@ public class Listrev
         lr.head.next.next=new Node(30);
         lr.head.next.next.next=new Node(40);
         lr.head.next.next.next.next=new Node(50);
-        lr.head.next.next.next.next.next=new Node(100);
         System.out.println("Initial linked List");
         lr.print(head);
         head=lr.rev(head);
