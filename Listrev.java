@@ -1,4 +1,3 @@
-//reversing a linked list 
 public class Listrev
 {
     static Node head;
