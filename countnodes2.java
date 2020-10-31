@@ -20,7 +20,7 @@ public class Recurnodes
         head=n;
     }
     
-    //recursive approach
+    //using recursion
     public int count(Node no)
     {
         if(no==null)
