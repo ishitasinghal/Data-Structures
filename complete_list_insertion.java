@@ -1,4 +1,4 @@
-//complete insertion program for a linked list.
+//insertion in a linked list
 public class Completeinsertion
 {
     Node head;
