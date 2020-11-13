@@ -17,8 +17,7 @@ class Keycount
 		Node n = new Node(element);
 		n.next=head;
 		head=n;
-	}
-	
+	}	
 	int countkey(int key)
 	{
 		Node present=head;
