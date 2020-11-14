@@ -46,7 +46,6 @@ class Duplicatenodes
 		}
 		System.out.println();
 	}
-	
 	public static void main(String args[])
 	{
 		Duplicatenodes dn = new Duplicatenodes();
