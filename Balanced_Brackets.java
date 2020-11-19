@@ -29,7 +29,6 @@ top--;
 return element;
 } 
 }
-
 boolean isEmpty(){
 return (top==-1)?true:false;
 } 
@@ -77,5 +76,3 @@ public static void main(String[] args)
     } 
     
 }
-
-
