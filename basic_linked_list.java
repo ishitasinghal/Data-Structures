@@ -1,7 +1,7 @@
 //basic linkeed-list program
 public class Linkedlist
 {
-    Node head; //head of type node
+    Node head; 
     static class Node
     {
         int data;
