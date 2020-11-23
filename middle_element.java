@@ -27,7 +27,6 @@ public class Middle
             System.out.println("=*=MIDDLE ELEMENT=*="+ ptr1.data);
         }
     }
-    
     void insert(int element)
     {
         Node n = new Node(element);
