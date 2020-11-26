@@ -1,3 +1,5 @@
+//string reverser using stack
+
 import java.util.*;
 
 class Stack
