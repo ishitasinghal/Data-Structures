@@ -1,4 +1,5 @@
 //inserting inside a linked list
+
 public class Insertionatfront
 {
     Node head;
