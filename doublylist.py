@@ -1,4 +1,4 @@
-#double linked-list
+#double linked-list python implementation
 
 class Node:
     def __init__(self, data):
