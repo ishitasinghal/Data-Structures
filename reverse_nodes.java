@@ -1,4 +1,5 @@
 //reversing a stack that is bottom element to be inseted at the top and vice-versa.
+
 import java.util.Stack;
 public class Revstack
 {
